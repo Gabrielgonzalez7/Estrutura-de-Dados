@@ -1,0 +1,39 @@
+
+		//criar  n listas representando as disciplinas do curso cc
+		//para cada lista colocar alguns nomes de alunos
+		// criar a lista CienciaComputação e adicionar todas as listas da disciplina 
+		//mostrar o nome do aluno e quantas disciplinas ele cursa
+
+
+package ex2;
+
+import java.util.ArrayList;
+
+public class ex2 {
+
+	public static void main(String[] args) {
+		ArrayList <String> ProjetoBancoDados = new ArrayList<>();
+        ArrayList <String> EstruturaDados = new ArrayList<>();
+        ArrayList <String> ComunicacaoDados = new ArrayList<>();
+        
+        ArrayList <String> CienciaComputacao = new ArrayList<>();
+       
+        ProjetoBancoDados.add("Andrisa");
+        ProjetoBancoDados.add("Gabriel");
+        ProjetoBancoDados.addAll(CienciaComputacao);
+
+        EstruturaDados.add("Andrisa");
+        EstruturaDados.add("Matheus");
+        EstruturaDados.addAll(CienciaComputacao);
+
+        ComunicacaoDados.add("Dj.Diani");
+        ComunicacaoDados.add("Andrisa");
+        ComunicacaoDados.addAll(CienciaComputacao);
+        
+        System.out.println("Projeto Banco de Dados: " + ProjetoBancoDados);
+        System.out.println("Estrutura de Dados: " + EstruturaDados);
+        System.out.println("Comunicação de Dados: " + ComunicacaoDados);
+
+	}
+
+}
